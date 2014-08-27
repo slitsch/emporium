@@ -1,0 +1,39 @@
+body, html {
+    height: 100%
+}
+body {
+    padding-bottom: 20em;
+}
+header {
+    text-align: center;
+    background-image: url("../img/worldMap_washout2.jpg");
+    background-position: 80% 50%;
+    background-repeat: no-repeat;
+    color: #4c4bbc;
+    font-weight: 900;
+    text-align: right;
+}
+
+#container {
+    min-height: 100%;
+}
+.TGE_header {
+    font-size: 60px;
+}
+#content, #menuL, #menuR {
+    color: #4c4bbc
+}
+
+#foot {
+    /*background-color: linen;*/
+    color:#4c4bbc;
+    clear: both;
+    text-align: center;
+}
+
+footer {
+    /*height: 20em;*/
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
