@@ -1,5 +1,6 @@
 /**
- * Created by Valued Customer on 8/12/2014.
+ * Calculate carpet area in sq ft = length* width
+ * and cost = area * price per sq ft
  */
 
 jQuery(document).ready(function($) {
@@ -29,19 +30,16 @@ jQuery(document).ready(function($) {
         var pBox = document.getElementById('priceBox');
         calcs.price = parseFloat(pBox.value);
         if (calcs.price <= 0 || isNaN(calcs.price)) {
-<<<<<<< HEAD
             $('pBox').addClass('badBox');
             alert("Please enter a price per sq ft");
             return false
         }
-        $('pBox').removeClass('badBox');
-=======
-            $(pBox).addClass("badBox");
-            alert("Please enter a price per sq ft");
-            return false
-        }
+//        $('pBox').removeClass('badBox');
+//        $(pBox).addClass("badBox");
+//        alert("Please enter a price per sq ft");
+//        return false;
+
         $(pBox).removeClass("badBox");
->>>>>>> e8896f687979572a0bb48ad849a07dc34f4e2b1e
         return true
     }
 

@@ -1,9 +1,10 @@
-html {
-    width: 850px;
-}
 
 body{
-    width: 850px;
+    /*center the page content*/
+    margin: 0 auto;
+    width: 950px;
+    background-color: #e8e9be;
+    text-align: center;
 }
 
 #Romney {
@@ -11,7 +12,7 @@ body{
    }
 
 header  {
-    background: #2A5070;
+    background: rgba(197, 123, 31, 1);
     width: 100%;
     padding: 1px;
     text-align: center;
@@ -19,26 +20,43 @@ header  {
 }
 
 h1 {
-    color: linen;
+    color: #5b756a;
     padding-top: 30px;
 }
 h3 {
     text-align: center;
 }
 #calculator {
-    color: #2A5070;
-    width: 800px;
+    color: #090907;
+    width: 850px;
     padding : 30px;
     width: 800px;
+    height: 500px;
 }
 
+#content {
+    display: inline-block;
+    /*padding:20px*/
+}
+
+label {
+    padding:10px;
+}
 #priceBox, #widthBox, #lengthBox, #quantityBox, #areaCostBox {
     text-align: right;
-    float: right;
+    /*float: right;*/
+    padding:5px
 }
 
 #formLeft, #formRight {
     text-align: right;
+    width: 400px
+    height: 500px;
+    /*padding:20px*/
+}
+
+#calculate {
+    font-size: 24px;
 }
 
 #formLeft {
@@ -52,4 +70,12 @@ h3 {
 .badBox {
     background: red;
     color: white;
+}
+
+footer {
+    width:100%;
+    text-align: center;
+    background-color: white;
+    height: 5em;
+
 }

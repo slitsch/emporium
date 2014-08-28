@@ -20,31 +20,41 @@
         <h1>Sally's Wool Carpet Store<br>
             Area/Price Calculator </h1>
     </header>
+    <p></p>
 
     <div id="calculator">
-        <div id="content" style=" display: inline-block padding:20px">
+        <div id="content">
             <h3>Enter the carpet price, room width and length<br>
             Click Calculate</h3><br>
 
-        <form id="formLeft">
-            <label for="priceBox">Price per sq ft.(USD)</label>
-            <input type="text" name="priceBox" id="priceBox" value="1.00"><br>
-            <label for="widthBox">Room width (ft)</label>
-            <input type="text" name="widthBox" id="widthBox" value="0"><br>
-            <label for="lengthBox">Room length (ft)</label>
-            <input type="text" name="lengthBox" id="lengthBox" value="0"><br>
-        </form>
+            <form id="formLeft">
+                <label for="priceBox">Price per sq ft.(USD)</label>
+                <input type="text" name="priceBox" id="priceBox" value="1.00"><br>
+                <label for="widthBox">Room width (ft)</label>
+                <input type="text" name="widthBox" id="widthBox" value="0"><br>
+                <label for="lengthBox">Room length (ft)</label>
+                <input type="text" name="lengthBox" id="lengthBox" value="0"><br>
+            </form>
 
-        <form id="formRight">
+            <form id="formRight">
 
                 <label for="quantityBox">Carpet area (sq ft)</label>
-                <input type="text" name="quantityBox" id="quantityBox"><br>
+                <input type="text" name="quantityBox" id="quantityBox" value="0"><br>
                 <label for="areaCostBox">Carpet cost ($)</label>
-                <input type="text" name="areaCostBox" id="areaCostBox"><br><br>
+                <input type="text" name="areaCostBox" id="areaCostBox" value="0.00"><br><br>
 
-            <input type="submit" id="calculate" value="Calculate"> </input>
+                <input type="submit" id="calculate" value="Calculate"> </input>
             </form>
         </div>
     </div>
+
+    <footer>
+        <p>Note: colors modeled after the Wes Anderson palette:
+        <a href="http://laughingsquid.com/wes-anderson-palettes-a-visualization-of-the-color-schemes-that-wes-anderson-uses-in-his-films/">Moonrise Kingdom</a>
+        with some license on my part...
+        </p>
+        © 2014 GWE
+        <a href="mailto:samlitsch@gmail.com">Contact GWE</a>
+    </footer>
 </body>
 </html>
