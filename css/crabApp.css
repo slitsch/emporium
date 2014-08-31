@@ -1,0 +1,55 @@
+
+body{
+    /*center the page content*/
+    margin: 0 auto;
+    /*width: 950px;*/
+    background-image: url("../img/crabAppJar_Lg.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    /*font: sans-serif;*/
+
+}
+
+header {
+    color: olive;
+    background-color: #f9e5aa;
+    /*border: 5px solid #e8ae9f;*/
+    border-radius: 100px;
+}
+
+.spacer {
+    height: 2em;
+}
+#crabJarImage {
+    background-image: url("../img/crab1_5.jpg") ;
+    /*background-position: 100% 100%;*/
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+#recipe {
+    background-color: #ffe3d1;
+    text-align: left;
+    /*padding: 10px;*/
+    padding: 35px 60px 10px 70px;
+    /*-moz-border-radius: 100px;*/
+    /*-webkit-border-radius: 100px;*/
+    border-radius: 150px;
+}
+
+#recipe, header, #foot {
+    border: 5px solid #80a296;
+}
+
+#timing, #ready {
+    font-weight: 700;
+    text-align: center;
+}
+
+#foot {
+    height: 80px;
+    padding: 15px;
+    background-color: #f9e5aa;
+    border-radius: 100px;
+}

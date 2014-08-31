@@ -1,5 +1,8 @@
 body, html {
-    height: 100%
+    height: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    color: #4c4bbc;
 }
 body {
     padding-bottom: 20em;
@@ -21,19 +24,21 @@ header {
     font-size: 60px;
 }
 #mainContent, #menuL, #menuR {
-    color: #4c4bbc
+    /*color: #4c4bbc*/
 }
 
-#foot {
-    /*background-color: linen;*/
-    color:#4c4bbc;
-    clear: both;
-    text-align: center;
+.spacer {
+    height: 20px;
 }
+#foot {
+
+     clear: both;
+     text-align: center;
+ }
 
 footer {
     /*height: 20em;*/
-    position: absolute;
-    bottom: 0;
+    /*position: absolute;*/
+    /*bottom: 0;*/
     width: 100%
 }
