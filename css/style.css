@@ -21,10 +21,15 @@ header {
     min-height: 100%;
 }
 .TGE_header {
-    font-size: 60px;
+    font-size: 50px;
 }
-#mainContent, #menuL, #menuR {
-    /*color: #4c4bbc*/
+
+#motto {
+    font-style: italic;
+ }
+
+li {
+    color: dimgray;
 }
 
 .spacer {
