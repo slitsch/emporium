@@ -171,37 +171,44 @@
 <body>
 <header>
     <h1>Check Out a Chip</h1>
-    <h4>Test the parcel size and building presence hypothesis by clicking on a point to display
-    the satellite image chip centered on those coordinates.<br>
-        Determine whether a building exists on the parcel and click on the button for 'Buildings exists' or 'No buildings exist'.<br>
-        When a building is found, a blue marker will appear.
-        Brown markers indicate that no buildings are present.</h4>
+    <h4><ul>
+        <li>Click on a location to display
+    the satellite image chip centered on those coordinates.</li>
+        <li>Determine whether a building exists on the parcel and click on the button for 'Buildings exists' or 'No buildings exist'.<br>
+        <li>When a building is found, a blue marker will appear.</li>
+        <li>Brown markers indicate that no buildings are present.</li>
+        <li>Your score is kept at the page bottom.</li>
+    </ul></h4>
 </header>
 <div class="container-fluid">
-    <!--<div class="row">-->
+    <div class="row mapRow">
         <div class="col-sm-6   well" id="map-canvas" style="height : 400px">
         </div>
         <div class="col-sm-6  well" id="chipDiv2">
             <img src="img/sally_sm2.jpg" class="img-responsive" alt="Responsive image">
-            Sally is just an attractive placeholder for the chip...
+            Sally is just an attractive placeholder for the image chip...
         </div>
     </div>
-<!--</div>-->
 
-<footer>
-    <div id="leftFoot">
-    Session score (n=46)
-        <div id="imagesChecked">Images checked = 0</div>
-        <div id="buildingsFound">Buildings found = 0</div>
-     </div>
 
-    <div id='rightFoot'>
-        Parcel Plots and Buildings<br>
-        © 2014 <a href="index.html">GWEmporium</a>
-        <a href="mailto:samlitsch@gmail.com">Sam Litschert</a> for DigitalGlobe Tech Exam<br>
-        July, 2014<br>
+
+    <div class="row footRow">
+        <div class="col-sm-6" id="leftFoot">
+            Session score (n=46)
+                <div id="imagesChecked">Images checked = 0</div>
+                <div id="buildingsFound">Buildings found = 0</div>
+        </div>
+
+        <div class="col-sm-6" id='rightFoot'>
+                Parcel Plots and Buildings<br>
+                © 2014 <a href="index.html">GWEmporium</a>
+                or <a href="webLabPortFolio.html">WebLab  Portfolio</a><br>
+                <a href="mailto:samlitsch@gmail.com">Contact Sam Litschert</a> <br>
+                July, 2014<br>
+        </div>
     </div>
 
-</footer>
+
+</div>
 </body>
 </html>
