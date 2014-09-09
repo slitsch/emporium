@@ -2,19 +2,15 @@
 body{
     /*center the page content*/
     margin: 0 auto;
-    /*width: 950px;*/
     background-image: url("../img/crabAppJar_Lg.jpg") ;
     background-repeat: no-repeat;
     background-position: center center;
     text-align: center;
-    /*font: sans-serif;*/
-
 }
 
 header {
     color: olive;
     background-color: #f9e5aa;
-    /*border: 5px solid #e8ae9f;*/
     border-radius: 100px;
 }
 
@@ -23,7 +19,6 @@ header {
 }
 #crabJarImage {
     background-image: url("../img/crab1_5.jpg") ;
-    /*background-position: 100% 100%;*/
     background-repeat: no-repeat;
     height: 400px;
 }
@@ -31,10 +26,7 @@ header {
 #recipe {
     background-color: #ffe3d1;
     text-align: left;
-    /*padding: 10px;*/
     padding: 35px 60px 10px 70px;
-    /*-moz-border-radius: 100px;*/
-    /*-webkit-border-radius: 100px;*/
     border-radius: 150px;
 }
 
@@ -52,4 +44,40 @@ header {
     padding: 15px;
     background-color: #f9e5aa;
     border-radius: 100px;
+}
+
+h4 {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+@-webkit-keyframes jump {
+    from {
+        -webkit-transform: translateY(0px);
+    } to {
+          -webkit-transform: translateY(-10px);
+      }
+}
+h4 {
+    position: relative;
+    z-index: 5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    -webkit-transform-origin: 0%,0%;
+    -webkit-animation-iteration-count: 1,15;
+    -webkit-animation-direction: normal, alternate-reverse;
+    -webkit-animation-name: jump;
+    -webkit-animation-delay: 0s,0s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-duration: 1s,400ms;
 }
