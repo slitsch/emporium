@@ -28,12 +28,12 @@ jQuery(document).ready(function($) {
         console.log(arr);
         document.getElementById('uniqArrBoxOut').value = arr;
     });
-    $('slugButton').on('click', function(){
+    $('#slugButton').on('click', function(){
         var str1 = document.getElementById('slugBox').value;
         console.log(str1);
         str1 = slugize(str1);
-        document.getElementById('slugBox').value = str;
-    })
+        document.getElementById('slugOutBox').value = str1;
+    });
 });
 
 // **** test strings ****
@@ -103,18 +103,22 @@ function phoneFormat(numStr) {
     console.log(numStr);
     var reg = /(\D)/g; //includes non-number chars
     if (numStr.match(reg)) {
-        return "Non-numbers are included: string invalid: " + numStr;
+        alert("Non-numbers are included: string invalid: " + numStr);
+        return false;
     }
    if (numStr.length > 10) {
     if (numStr[0] ==="0") {
-        return "String is long, it might be an international number, I'll ignore it: " + numStr;
+        alert( "String is long, it might be an international number, I'll ignore it: " + numStr);
+        return false;
     }
     else {
-        return "String is too long; it is not a phone number: " + numStr;
+        alert("String is too long; it is not a phone number: " + numStr);
+        return false;
     }
    }
    else if (numStr.length < 10) {
-       return "String is too short to be a phone number";
+       alert( "String is too short to be a phone number");
+       return false;
    }
    else {
        var areaCode = numStr.slice(0,3);
